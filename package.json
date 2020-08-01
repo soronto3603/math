@@ -1,0 +1,11 @@
+{
+  "name": "combination",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "soronto3603@gmail.com",
+  "devDependencies": {
+    "jest": "^26.2.2"
+  }
+}
