@@ -1,4 +1,7 @@
-function combination(n, r) {
+const factorial = require('./factorial')
+// https://ko.wikipedia.org/wiki/%EC%A1%B0%ED%95%A9
+
+function combinationList(n, r) {
   const result = []
   function fill(array) {
   	if (array.length === r) {
@@ -18,4 +21,11 @@ function combination(n, r) {
   return result
 }
 
-module.exports = combination;
+function combination(n, k) {
+  return factorial(n) / (factorial(k) * factorial(n - k))
+}
+
+module.exports = {
+  combination,
+  combinationList,
+}
