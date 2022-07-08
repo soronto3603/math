@@ -1,15 +1,12 @@
 #%%
 import math
 import numpy as np
-import plotly.express as px
 import math
 import plotly.graph_objects as go
 import colorsys
 
 from typing import List
 from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageFilter
-from matplotlib import pyplot as plt
-from scipy.fft import fft, fftfreq
 
 size = 1000
 TWO_PI = 2 * math.pi
