@@ -59,9 +59,9 @@ class RenderFloodFill:
     # randomValue = self.alpha if random.random() >= 0.5 else -self.alpha
     # _color[randomIndex] = _color[randomIndex] + randomValue
 
-    _color[0] = _color[0] + (self.alpha if random.random() >= 0.1 else -self.alpha)
-    _color[1] = _color[1] + (self.alpha if random.random() >= 0.1 else -self.alpha)
-    _color[2] = _color[2] + (self.alpha if random.random() >= 0.1 else -self.alpha)
+    _color[0] = _color[0] + (self.alpha if random.random() >= 0.5 else -self.alpha)
+    _color[1] = _color[1] + (self.alpha if random.random() >= 0.5 else -self.alpha)
+    _color[2] = _color[2] + (self.alpha if random.random() >= 0.5 else -self.alpha)
     return tuple(_color)
 
   def render(self):
